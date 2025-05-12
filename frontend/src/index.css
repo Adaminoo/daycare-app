@@ -1,5 +1,14 @@
+@font-face {
+    font-family: mont;
+    src: url(assets/Mont-ExtraLightDEMO.otf);
+}
+
+@font-face {
+    font-family: montHeavy;
+    src: url(assets/Mont-HeavyDEMO.otf);
+}
+
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -8,3 +17,4 @@
     margin: 0;
     padding: 0;
 }
+

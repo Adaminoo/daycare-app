@@ -8,12 +8,12 @@ export default function Home() {
         <>
             <div className={styles.homeContainer} style={{backgroundImage: `url(${bg})`, }}>
                 <div className={styles.top}>
-                    <div className={styles.title}>Kelly's Kare</div>
-                    <div className={styles.subtitle}>Family Care Center</div>
-                    <div className={styles.titleCaption}>DAYCARE FOR AGES 18-36 MONTHS</div>
+                    <div className={styles.title}>KELLY'S KARE</div>
+                    <div className={styles.subtitle}>FAMILY CARE CENTER</div>
+                    <div className={styles.titleCaption}>DAYTIME CARE FOR AGES 18-36 MONTHS</div>
                 </div>
                 <div className={styles.center}>
-                    <div>COME TOUR OUR MONTESSORI-INSPIRED, HOMEY ENVIRONMENT</div>
+                    <div className={styles.centerTitle}>COME TOUR OUR MONTESSORI-INSPIRED, HOMEY ENVIRONMENT</div>
                     <div>Tuesday - Friday</div>
                     <div>8am - 3pm</div>
                     <div>123 anywhere street</div>
