@@ -4,7 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Link, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About'
+import Bio from './pages/Bio'
+import Faq from './pages/FAQ'
+import Contact from './pages/Contact'
 
 function App() {
 
@@ -13,14 +15,11 @@ function App() {
   return (
     <>
       <div>
-        {/* Navigation */}
-        <nav>
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
-        </nav>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/about' element={<About />} />
+          <Route path='/bio' element={<Bio />} />
+          <Route path='/faq' element={<Faq />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
     </>
