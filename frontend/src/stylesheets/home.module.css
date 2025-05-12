@@ -1,0 +1,11 @@
+.title {
+  fill:rgb(54, 54, 132);
+  font-size: 40px;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
