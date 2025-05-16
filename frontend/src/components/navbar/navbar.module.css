@@ -6,17 +6,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
-    position: fixed;
+    position: relative;
+    z-index: 1000; 
     --mask:
         radial-gradient(67.08px at 50% calc(100% - 90px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
         radial-gradient(67.08px at 50% calc(100% + 60px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
     -webkit-mask: var(--mask);
             mask: var(--mask);
+    overflow: visible;
+    padding-bottom: 30px;
 }
 
 .navTitle {
     font-size: 32px;
+    font-weight: bold;
+    margin-left: 5%;
 }
 
 .navLinks {
@@ -24,12 +28,51 @@
     justify-content: space-around;
     width: 30%;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .navLink {
     color: black;
     text-decoration: none;
     cursor: pointer;
-    border: 5px solid black;
     pointer-events: auto;
+}
+
+.menuButton {
+    cursor: pointer;
+    
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    display: none;
+}
+
+#menuButton {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .menuButton {
+        display: block;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        right: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: none;
+        z-index: 9999;
+    }
+
+    .showMenu {
+        display: flex;
+    }
 }

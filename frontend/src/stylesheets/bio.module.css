@@ -4,12 +4,18 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 180px;
+    position: relative;
 }
 
 .bioTop {
-    width: 60%;
-    height: 80vh;
-    background-color: #ffef70;
+    padding: 40px 0;
+    width: 100%;
+    background-color: rgb(255, 246, 169);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .topImage {
@@ -18,11 +24,11 @@
     background-size: contain;
     float: left;
     border: 2px solid black;
-    margin: 30px;
 }
 
 .bioContent {
     margin-top: 30px;
+    width: 70%;
 }
 
 .bioText {
@@ -35,9 +41,13 @@
 }
 
 .bioBottom {
-    width: 60%;
-    height: 80vh;
-    margin-top: 50px;
+    margin-top: 40px;
+    background-color: rgb(255, 246, 169);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bioContent {
