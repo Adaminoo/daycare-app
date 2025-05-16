@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Bio from './pages/Bio'
 import Faq from './pages/FAQ'
 import Contact from './pages/Contact'
+import Navbar from './components/navbar/Navbar'
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
 
   return (
     <>
+      <Navbar />
+      
       <div>
         <Routes>
           <Route path='/' element={<Home/>} />
